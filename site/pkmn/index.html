@@ -1,0 +1,43 @@
+<!-- 
+* Will Houle
+-->
+
+<html>
+<head>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <script>
+        function pressed(e) {
+            if ( (window.event ? event.keyCode : e.which) == 13) { 
+                $('#input-area button').trigger('click');
+            }
+            if ( (window.event ? event.keyCode : e.which) == 17) { 
+                $('#content button').trigger('click');
+            }
+        }
+  </script>
+  <title>Who's That Pokemon?</title>
+</head>
+	<body>
+	
+		<div id="content">
+			<div id="header">
+				<h1>Who's that Pokemon?</h1>
+				<p>When typing, press <span class="special">ENTER</span> to submit the answer.</p>
+				<p>Press the <span class="special">CNTRL</span> key to go to next/skip image.</p>
+				<p>Alternatively, click the <span class="special">BUTTONS</span> below.</p>	
+			</div>
+			<div id="viewport">	
+
+			</div>
+			<form id="form1" method="GET" action="#">
+    		<div id="input-area">
+            	<textarea onkeydown="pressed(event)" class="input" name="answer" id="answer"></textarea>
+            	<button type="submit" class="floatL">Submit</button>     	
+    		</div>
+			</form>
+			<button type="submit" id="next" class="floatR">Next/Skip</button>
+		</div>
+	</body>
+</html>
