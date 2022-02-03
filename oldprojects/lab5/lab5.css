@@ -1,0 +1,8 @@
+body {
+	background-color: orange;
+	color: white;
+}
+
+form, textarea {
+	width: 500px;
+}

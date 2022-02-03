@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lab 4: Advanced CSS</title>
+<!-- STYLES - lab4.css -->
+<link rel="stylesheet" href="lab4.css" type="text/css" />
+<!-- end of styles -->
+</head>
+
+<body>
+<!-- MAIN CONTAINER - Surrounds all the content in the website, set to be centered in the middle
+of the browser window and given 1000px width -->
+<div id="mainContainer">
+
+    <!-- HEADER SECTION - Contains the main header and navigational tabs -->
+    <div id="header">
+        <h1>Website Layout Exercise</h1>
+        <div id="nav">
+            <ul>
+                <li><a href="#">Cats</a></li>
+                <li><a href="#">Dogs</a></li>
+                <li><a href="#">Sushi</a></li>
+                <li><a href="#">Dragons</a></li>
+            </ul>
+        </div>
+        <div style="clear:left;"></div>
+    </div>
+    <!-- end of header -->
+    
+    <!-- CONTENT SECTION - Contains the 3 columns of content surrounded by a cream background -->
+    <div id="content">
+    	<!-- LEFT COLUMN -->
+        <div class="column" id="left">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in sapien eget sem luctus blandit eu ut ligula. Integer bibendum dignissim odio vitae accumsan. Quisque quis vestibulum tortor. Nulla lectus tellus, euismod in suscipit eget, venenatis eu augue. Quisque sem purus, tincidunt eget egestas ut, ultricies rutrum libero. Pellentesque sit amet nisi in purus porta vestibulum id id ante. Proin sit amet nisl dui, eu dapibus magna. </p>
+		</div>
+        
+        <!-- CENTER COLUMN -->
+        <div class="column" id="middle">
+            <p> Maecenas congue mollis nisi sed bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet enim et mi consequat nec ornare arcu bibendum. Etiam dignissim enim quis neque pharetra elementum. Integer id est euismod erat blandit egestas. Fusce purus ante, cursus eget dictum et, pretium pretium leo. Donec ligula justo, feugiat non pretium consectetur, dignissim vitae tellus. In ut tortor purus, sed pretium elit. Proin quis justo vel nunc auctor pellentesque in ornare orci. Nam porttitor lacus eget lorem eleifend id molestie felis cursus. Sed et mi diam, sit amet pulvinar dui. Praesent in cursus ante.</p>
+    
+            <p>Aliquam convallis lacinia augue, at consequat urna convallis sit amet. Morbi pharetra facilisis ultricies. Quisque sed gravida ligula. Etiam ut quam ipsum. Aliquam tincidunt, risus vitae cursus pulvinar, lacus mi mattis odio, ac congue tellus elit ut lorem. Quisque non enim tellus. Etiam mauris ligula, eleifend sed ornare ut, rutrum sed velit. Integer ac tellus enim, sit amet venenatis felis. Aenean auctor scelerisque mi, id consectetur ante convallis in. Mauris volutpat sollicitudin lectus. Sed ut suscipit magna. In rhoncus hendrerit quam, et condimentum metus convallis ac. Aenean ac arcu magna, eu pretium sem. Fusce vitae arcu non quam rutrum posuere vel eget nisl. Morbi ipsum eros, ultrices non fermentum quis, tincidunt vitae nulla. </p>
+        </div>
+        
+        <!-- RIGHT COLUMN -->
+        <div class="column" id="right">
+            <p>Ut mattis semper sagittis. Vestibulum condimentum justo at nunc lobortis sed consectetur nunc consequat. Vivamus vulputate velit eleifend dolor convallis non ornare magna rhoncus. Donec consequat neque ac libero dictum quis eleifend lectus suscipit. Integer risus sapien, ultricies non ornare nec, pellentesque eget eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+    </div>
+    <!-- end of content -->
+    
+    <!-- FOOTER SECTION - Contains the orange footer with inline "sitemap" links -->
+    <div id="footer">
+        <ul id="siteMap">
+            <li><a href="#">Cats</a></li>
+            <li><a href="#">Dogs</a></li>
+            <li><a href="#">Sushi</a></li>
+            <li class="lastChild"><a href="#">Dragons</a></li>
+        </ul>
+    </div>
+    <!-- end of footer -->
+</div>
+<!-- end of main container -->
+
+<a class="back" href="../index.html"><img src="../backToMain.png"></a>
+</body>
+</html>

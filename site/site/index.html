@@ -1,0 +1,162 @@
+<html>
+<head>
+	<title>Test</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function (){
+			function dBug(data) {
+				console.log(data);
+			}
+			dBug("document ready");
+
+			$.stellar();
+
+		});
+	</script>
+
+	<style type="text/css">
+		body {
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-top: 20px;
+			width: 1000px;	
+			height: 1400px;	
+			max-height: 1402px;
+			max-width: 1002px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: Verdana,Helvetica,Arial,sans-serif;
+			border: solid green 1px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 10px;
+			color: white;
+			margin-top: 20px;
+		}
+
+		p {
+			color: white;
+			text-align: center;
+		}
+
+		#small {
+			font-style: italic;
+			font-size: 10px;
+			margin-top: -12px;
+		}
+
+		#topBox {
+			height: 400px;
+			width: 929px;
+			border: solid black 1px;
+			float: right;
+			margin-top: -1px;
+			margin-right: -1px;
+			background-image: url(image.jpg);
+			background-size: 1400px 600px;
+			background-position: -0% 60%;
+			cursor: default;
+		}
+
+		#firstBox {
+			height: 300px;
+			width: 929px;
+			border: solid black 1px;
+			background-color: #799e94;
+			float: right;
+			cursor: default;
+			position: relative;
+    		top: -1003;
+    		left: 1px;
+		}
+
+		#secondBox {
+			height: 400px;
+			width: 929px;
+			border: solid black 1px;
+			float: right;
+			cursor: default;
+			position: relative;
+    		top: -1004;
+    		left: 1px;
+    		background-image: url(space.jpg);
+			background-size: 1400px 600px;
+			background-position: 10% -10%;
+		}
+
+		#thirdBox {
+			height: 300px;
+			width: 929px;
+			border: solid black 1px;
+			background-color: #799e94;
+			float: right;
+			cursor: default;
+			position: relative;
+    		top: -1005;
+    		left: 1px;
+		}
+
+		#navigationPane {
+			width: 70px;
+			margin-left: -1px;
+			border: solid black 1px;
+			min-height: 1400px;
+			max-height: 2000px;
+			margin-bottom: -1px;
+			margin-top: -1px;
+			background-color: #7bc9b4;
+		}
+
+		#box {
+			width: 500px;
+			height: 150px;
+			border: dotted white 2px;
+			clear: none;
+			background-color: rgba(0, 0, 0, 0.85);
+			margin-left: 200px;
+			margin-top: 120px;
+			-webkit-border-radius: 10px;
+  			border-radius: 10px;
+		}
+
+		#navigationPane img {
+			margin-left: 5px;
+			margin-top: 10px;
+		}
+
+		a:hover {
+			opacity: 0.8; 
+		}
+	</style>
+</head>
+<body>
+	<div id="topBox" data-stellar-background-ratio="0.2">
+		<div id="box" >
+			<h1>WH Programming</h1>
+			<p>Will Houle Programming - Student Developer</p>
+			<p id="small">A site created to host tutorials, past lab assignments, and future endeavors.</p>
+		</div>
+	</div>
+
+	<div id="navigationPane">
+		<a href="http://www.twitter.com/will_houle" title="Twitter"><img src="twitter.png" /></a>
+		<a href="http://mediastudies.humber.ca/programs/diplomas/advanced/game-programming.html" title="Humber Program"><img src="humber.png" /></a>
+	</div>
+
+	<div id="firstBox">
+
+	</div>
+
+	<div id="secondBox" data-stellar-background-ratio="0.2">
+
+	</div>
+
+	<div id="thirdBox">
+
+	</div>
+</body>
+</html>

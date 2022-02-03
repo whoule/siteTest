@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" />	
+		<title>Lab 5: Forms</title>
+		<link rel="stylesheet" href="lab5.css" type="text/css" />
+	</head>
+
+	<body>
+		<div id="header">
+			<h1>Order a pizza!</h1>
+		</div>
+			
+		<form action="form.php" method="get" name="form" id="form">
+			
+		<div id="size">
+				<label>Choose your size:
+				<select name="pizza-size" id="pizza-size" size="1">
+					<option value="small"> Small </option>
+					<option value="medium"> Medium </option>
+					<option value="large"> Large </option>
+					<option value="x-large"> X-Large </option>
+				</select>
+				</label>
+		</div>
+		
+		<div id="wellCooked">
+				<fieldset>
+					<legend>How well cooked?</legend>
+						<input type="radio" id="cook-type" name="cook-type" value="lightly-cooked" />Lightly Cooked<br/>
+						<input type="radio" id="cook-type" name="cook-type" value="normal" />Normal<br/>
+						<input type="radio" id="cook-type" name="cook-type" value="extra-cooked" />Extra Cooked<br/>
+				</fieldset>
+		</div>
+		
+		<div id="toppingChooser">
+		<br />
+			<fieldset>
+				<legend>Choose Toppings</legend>
+					<input type="checkbox" id="top-1" name="top-1" value="pepperoni" />Pepperoni<br/>
+					<input type="checkbox" id="top-2" name="top-2" value="green-pepper" />Green Pepper<br/>
+					<input type="checkbox" id="top-3" name="top-3" value="mushrooms" />Mushrooms<br/>
+					<input type="checkbox" id="top-4" name="top-4" value="extra-cheese" />Extra Cheese<br/>
+			</fieldset>
+		</div>
+		
+		<div id="specialInstructions">
+		<br />
+			<label>Special Instructions</label>
+			<br />
+					<textarea name="comments" id="comments" cols="40" rows="5">
+					</textarea>
+			
+		</div>
+		
+		<div id="buttons">
+				<input type="submit" value="Order Now" />
+				<input type="reset" value="Reset Order" />
+		</div>
+		
+		</form>
+
+		<a class="back" href="../index.html"><img src="../backToMain.png"></a>
+	</body>
+	
+</html>

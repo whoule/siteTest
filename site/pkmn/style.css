@@ -1,0 +1,77 @@
+/*  
+* Will Houle
+*/
+body {
+  color: black;
+  font-family: Segoe UI, Geneva, Arial;
+}
+
+#content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+p {
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -14px;
+}
+
+.special {
+  color: green;
+  font-weight: bold;
+}
+
+#viewport {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #86C440;
+  background-color: #C9E5C8;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+textarea {
+  margin: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 26px;
+  width: 125px;
+  max-height: 26px;
+  min-height: 26px;
+  max-width: 125px;
+  min-width: 125px;
+  font-size: 16px;
+  word-spacing: normal;
+}
+
+button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -10px;
+}
+
+#input-area h3 {
+  text-align: center;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}

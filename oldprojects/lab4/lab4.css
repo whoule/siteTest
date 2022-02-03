@@ -1,0 +1,111 @@
+body {
+	background: #333333 url(images/bg.gif);
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+	color: #BF4A1F;
+}
+
+/* MAIN CONTAINER STYLES */
+#mainContainer {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HEADER STYLES */
+#header { position: relative; }
+
+#header h1 { margin-left: 40px; }
+
+#header #nav {
+	position: absolute;
+	top: 0;
+	left: 550px;
+}
+
+#header #nav ul li {
+	float: left;
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+#header #nav ul li a {
+	background: url(images/tabs.png) no-repeat 0 0;
+	display: block;
+	height: 50px;
+	width: 80px;
+	text-align: center;
+	padding-top: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+#header #nav ul li a:hover {
+	background: url(images/tabs.png) no-repeat 0 -51px; /*0 -51px is left and top image (red tab is -51units up)*/
+}
+
+
+/* CONTENT STYLES */
+#content {
+	background-color: #ffffcc;
+	position: relative; /*required for some reason*/
+	height: 1%;
+	overflow: hidden;
+	-webkit-border-radius: 10px 10px 0 0; /*to make corners rounded top left, top right*/
+	border-radius: 10px 10px 0 0;/*same as above, but if u remove -webkit- line, this works*/
+}
+
+#content .column {
+	/*width: 100px;
+	background: #ccc; TEST ITEMS*/
+	position: relative;
+	float: left;
+	padding: 20px;
+}
+
+#left, #right {
+	width: 160px;
+}
+
+#middle {
+	width: 560px;
+}
+
+/* FOOTER */
+#footer {
+	clear: left;
+	position: relative;
+	background-color: #B54A1F;
+	text-align: center;
+	margin-top: -20px;
+}
+
+#footer ul li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 15px;
+	text-align: center;
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+#footer ul li a {
+	text-decoration: none;
+	color: white;
+	padding-right: 15px;
+}
+
+#footer ul li.lastChild {
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+

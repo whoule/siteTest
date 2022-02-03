@@ -1,0 +1,46 @@
+/* Styles */
+
+html, body { margin: 0; padding: 0;}
+
+#content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+}
+
+body {
+  background: white;
+  font-family: Tahoma,Geneva, sans-serif;
+}
+
+textarea {
+  width: 200px;
+  height: 22px;
+  resize: none;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  display: block;
+}
+
+button {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+#para p {
+  height: auto;
+  width: 200px;
+}
+
+label, .special {
+  color: #A608C1;
+}
+
+.special {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}

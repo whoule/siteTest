@@ -1,0 +1,31 @@
+body{
+	background-color:#f4f4f4;
+	color:#555555;
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:22px;
+	font-weight:normal;
+	text-align: center;
+
+	line-height:1.6em;
+	margin:0;
+	width: 50%;
+	margin:auto;
+}
+
+img{
+	width: 33%;
+	height: 33%;
+}
+
+label{
+	font-weight: bold;
+	color: red;
+}
+
+input{
+	text-align: center;
+	font-size: 18px;
+	height: auto;
+	width: 312px;
+}

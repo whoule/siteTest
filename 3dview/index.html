@@ -1,0 +1,34 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>MK Picture Cars DB</title>
+  <meta name="description" content="MK Picture Cars DB">
+  <meta name="author" content="Will Houle">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="javascript" href="scripts.js">
+
+
+
+</head>
+
+<body>
+ <!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+<!-- Use it like any other HTML element -->
+<style>
+	model-viewer{
+		width: 800px;
+		height: 600px;
+	}
+</style>
+<model-viewer src="test.glb" alt="test model mkpcs" camera-controls></model-viewer>
+</body>
+</html>

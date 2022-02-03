@@ -1,0 +1,136 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MKPCS Inventory</title>
+  <meta name="description" content="Webpage">
+  <meta name="author" content="William Houle">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+  
+<div class="flex-container">
+
+	<div class="flex-child" id="scroll">
+		<h2 id="setNumber">Select a Unit #</h2>
+		<img id="currentImage" src="">
+	</div>
+
+<div class="flex-child">
+	<table class="tableizer-table" id="vehicleInfoTable">
+		<thead>
+			<tr class="tableizer-firstrow">
+				<th>Unit #</th>
+				<th>Car Make</th>
+				<th>Quantity </th>
+				<th>Width (mm)</th>
+				<th>Ratio (mm)</th>
+				<th>Rim (in)</th>
+				<th>Storage</th>	
+				<th>Used?</th>
+			</tr>
+		</thead>
+		<tbody>
+			 <tr><td onclick="funcAssorted1()">OTHER</td><td>OUTDOOR ASSORTED</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcAssorted2()">OTHER</td><td>OUTDOOR ASSORTED 2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS00()">S00</td><td>Ford Raptor</td><td>8</td><td>265</td><td>65</td><td>17</td><td>262</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS01()">S01</td><td>Mercedes</td><td>8</td><td>205</td><td>55</td><td>16</td><td>262</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS02()">S02</td><td>Range Rover</td><td>4</td><td>235</td><td>60</td><td>18</td><td>261</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS03()">S03</td><td>Volvo</td><td>4</td><td>195</td><td>60</td><td>15</td><td>261</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS04()">S04</td><td>Honda</td><td>4</td><td>205</td><td>70</td><td>15</td><td>261</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS05()">S05</td><td>Jeep</td><td>4</td><td>235</td><td>75</td><td>15</td><td>261</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS06()">S06</td><td>Mazda</td><td>4</td><td>205</td><td>55</td><td>16</td><td>261</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS07()">S07</td><td>Ford</td><td>4</td><td>215</td><td>60</td><td>16</td><td>264</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS08()">S08</td><td>Red?</td><td>4</td><td>185</td><td>70</td><td>14</td><td>264</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS09()">S09</td><td>Spinners</td><td>4</td><td>155</td><td>80</td><td>13</td><td>264</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS10()">S10</td><td>Panda Van</td><td>4</td><td>8.75</td><td>&nbsp;</td><td>16.5</td><td>265</td><td>Taken away?</td></tr>
+			 <tr><td onclick="funcS11()">S11</td><td>Ford E100 Van</td><td>4</td><td>225</td><td>70</td><td>15</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS12()">S12</td><td>Chevy Malibu</td><td>4</td><td>225</td><td>55</td><td>17</td><td>265</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS13()">S13</td><td>Jimi's Camaro Racing</td><td>4 (2x2)</td><td>185 / 275</td><td>65 / 60</td><td>15 / 15</td><td>265</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS14()">S14</td><td>Toyota - Johnny</td><td>4</td><td>225</td><td>50</td><td>17</td><td>268</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS15()">S15</td><td>Ford PU 6 Bolt</td><td>4</td><td>275</td><td>55</td><td>20</td><td>268</td><td>cowboy hat dude</td></tr>
+			 <tr><td onclick="funcS16()">S16</td><td>Eagle Alloys - 5x4.5"</td><td>4</td><td>215</td><td>60</td><td>16</td><td>268</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS17()">S17</td><td>Lirea/Lizea? - 5x4.5"</td><td>4</td><td>205</td><td>70</td><td>15</td><td>268</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS18()">S18</td><td>RTX Rims 4 Bolt</td><td>4</td><td>205</td><td>40</td><td>17</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS19()">S19</td><td>Truck?</td><td>4</td><td>255</td><td>70</td><td>16</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS192()">S19-2</td><td>Truck?</td><td>4</td><td>255</td><td>70</td><td>16</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS20()">S20</td><td>Camaro</td><td>4</td><td>195</td><td>75</td><td>14</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS21()">S21</td><td>MSR?</td><td>4</td><td>205</td><td>45</td><td>16</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS22()">S22</td><td>Audi</td><td>4</td><td>235</td><td>35</td><td>19</td><td>264</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS23()">S23</td><td>R.Matteo</td><td>4</td><td>235</td><td>45</td><td>18</td><td>272</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS24()">S24</td><td>Safari TSR</td><td>4</td><td>235</td><td>75</td><td>15</td><td>267</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS25()">S25</td><td>Crager Chevette</td><td>4</td><td>185</td><td>70</td><td>13</td><td>267</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS26()">S26</td><td>Pontiac</td><td>2</td><td>225</td><td>70</td><td>16</td><td>265 Bottom 1/2 of Skid</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS27()">S27</td><td>R.Matteo</td><td>2</td><td>245</td><td>45</td><td>18</td><td>265 Bottom 1/2 of Skid</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS28()">S28</td><td>?? newish Avid yokohoma</td><td>2</td><td>225</td><td>65</td><td>17</td><td>265 Bottom 1/2 of Skid</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS29()">S29</td><td>Hancook</td><td>2</td><td>215</td><td>70</td><td>15</td><td>265 Top 1/2 of Skid</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS30()">S30</td><td>Goodyear LS</td><td>2</td><td>235</td><td>60</td><td>17</td><td>265 Top 1/2 of Skid</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS31()">S31</td><td>Goodyear VIVA Touring</td><td>3</td><td>215</td><td>70</td><td>15</td><td>265 Top 1/2 of Skid</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS32()">S32</td><td>Nokian Truck?</td><td>4</td><td>265</td><td>70</td><td>17</td><td>272</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS33()">S33</td><td>Goodyear Steel</td><td>4</td><td>195</td><td>65</td><td>15</td><td>272</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS34()">S34</td><td>Dodge</td><td>4</td><td>225</td><td>60</td><td>18</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS35()">S35</td><td>Blacklion - Taurus/Charger?</td><td>4</td><td>235</td><td>55</td><td>18</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS36()">S36</td><td>Champ 20 small holes</td><td>2</td><td>195</td><td>55</td><td>15</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS37()">S37</td><td>Avalanche 12 hole</td><td>3</td><td>185</td><td>65</td><td>14</td><td>260</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS38()">S38</td><td>SuperSport Van</td><td>4</td><td>235</td><td>70</td><td>15</td><td>268</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS39()">S39</td><td>Goodyear Wrangler BIG</td><td>4</td><td>275</td><td>65</td><td>18</td><td>268</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS40()">S40</td><td>Ford F150</td><td>4</td><td>255</td><td>70</td><td>16</td><td>263</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS41()">S41</td><td>GM 6 bolt</td><td>4</td><td>255</td><td>70</td><td>16</td><td>263</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS42()">S42</td><td>Audi TT</td><td>4</td><td>265</td><td>40</td><td>20</td><td>263</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS43()">S43</td><td>Solus 4 bolt</td><td>4</td><td>195</td><td>60</td><td>15</td><td>263</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS44()">S44</td><td>Borbet 745 OEM</td><td>4</td><td>275</td><td>40</td><td>19</td><td>263</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS45()">S45</td><td>Ultra Grip Steels</td><td>4</td><td>245</td><td>55</td><td>18</td><td>266</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS46()">S46</td><td>Honda OEM</td><td>1</td><td>195</td><td>55</td><td>15</td><td>266</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS47()">S47</td><td>Dodge Challenger</td><td>3</td><td>225</td><td>60</td><td>18</td><td>266</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS48()">S48</td><td>Golf Cart</td><td>2</td><td>215</td><td>60</td><td>8</td><td>266</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS49()">S49</td><td>GM</td><td>4</td><td>235</td><td>50</td><td>17</td><td>266</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS492()">S49-2</td><td>GM</td><td>4</td><td>235</td><td>50</td><td>17</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS50()">S50</td><td>Offroad</td><td>3 + 1</td><td>235 / 225</td><td>85 / 75</td><td>16</td><td>266</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS51()">S51</td><td>&nbsp;</td><td>4</td><td>215</td><td>65</td><td>17</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS52()">S52</td><td>Volvo</td><td>4</td><td>205</td><td>50</td><td>16</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS53()">S53</td><td>&nbsp;</td><td>4</td><td>205</td><td>75</td><td>14</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS54()">S54</td><td>&nbsp;</td><td>2</td><td>235</td><td>40</td><td>18</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS55()">S55</td><td>Volvo</td><td>2</td><td>195</td><td>60</td><td>15</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS56()">S56</td><td>Saab</td><td>4</td><td>185</td><td>65</td><td>15</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS57()">S57</td><td>Dodge Charger</td><td>4</td><td>215</td><td>65</td><td>17</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS58()">S58</td><td>&nbsp;</td><td>4</td><td>245</td><td>75</td><td>16</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS59()">S59</td><td>&nbsp;</td><td>3</td><td>215</td><td>65</td><td>17</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS60()">S60</td><td>&nbsp;</td><td>1</td><td>265</td><td>70</td><td>17</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS61()">S61</td><td>&nbsp;</td><td>3</td><td>205</td><td>55</td><td>16</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS62()">S62</td><td>ww</td><td>2+2 rim</td><td>235</td><td>75</td><td>15</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS63()">S63</td><td>&nbsp;</td><td>3</td><td>215</td><td>65</td><td>17</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS64()">S64</td><td>Mercedes</td><td>2</td><td>215</td><td>55</td><td>16</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS65()">S65</td><td>&nbsp;</td><td>2</td><td>205</td><td>55</td><td>16</td><td>273</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS66()">S66</td><td>&nbsp;</td><td>4</td><td>225</td><td>60</td><td>16</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS67()">S67</td><td>&nbsp;</td><td>3</td><td>215</td><td>75</td><td>15</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS68()">S68</td><td>BMW</td><td>1</td><td>265</td><td>40</td><td>20</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS69()">S69</td><td>20s Model A?</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>269 Loose</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS70()">S70</td><td>Old White Walls</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS71()">S71</td><td>Crown Vic</td><td>2</td><td>225</td><td>60</td><td>16</td><td>270</td><td>julian took 2 for cvic</td></tr>
+			 <tr><td onclick="funcS72()">S72</td><td>Crown Vic</td><td>3</td><td>225</td><td>60</td><td>16</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS73()">S73</td><td>Jeep</td><td>2</td><td>235 / 215</td><td>75</td><td>15</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS74()">S74</td><td>Crown Vic</td><td>0</td><td>235</td><td>55</td><td>17</td><td>270</td><td>pending use (1 for jimi)</td></tr>
+			 <tr><td onclick="funcS75()">S75</td><td>Older style white wall</td><td>2</td><td>225</td><td>70</td><td>15</td><td>269</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS77()">S77</td><td>Brian's old set from yukon</td><td>4</td><td>275</td><td>55</td><td>20</td><td>290</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS78()">S78</td><td>GM</td><td>4</td><td>225</td><td>60</td><td>16</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS79()">S79</td><td>78' Ford Pickup</td><td>4</td><td>235</td><td>75</td><td>15</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS80()">S80</td><td>BMW</td><td>4</td><td>225</td><td>45</td><td>17</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS81()">S81</td><td>BMW</td><td>4</td><td>205</td><td>55</td><td>16</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS82()">S82</td><td>??</td><td>4</td><td>225</td><td>60</td><td>16</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS83()">S83</td><td>??</td><td>4</td><td>235</td><td>70</td><td>16</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS84()">S84</td><td>Volvo, 1 hubcap missing</td><td>4</td><td>185</td><td>70</td><td>14</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS85()">S85</td><td>???</td><td>2</td><td>215</td><td>65</td><td>16</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS86()">S86</td><td>Subaru</td><td>4</td><td>205</td><td>60</td><td>15</td><td>End of 290s Rack</td><td>&nbsp;</td></tr>
+			 <tr><td onclick="funcS87()">S87</td><td>Ambulance NEW</td><td>2</td><td>225</td><td>75</td><td>16</td><td>End of 290s Rack</td><td></td></tr>
+		</tbody>
+	</table>
+	</div>
+</div>
+
+</body>
+</html>

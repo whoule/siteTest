@@ -1,0 +1,44 @@
+body {
+	font-family: Tahoma, Geneva, Arial, sans-serif;
+}
+
+p {
+	color: green;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	text-align: left;
+}
+
+li {
+	display: inline;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+a:visited {
+	color: gray;
+}
+
+.active {
+	font-weight: bold;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.special {
+	text-decoration: italic;
+	color: red;
+}

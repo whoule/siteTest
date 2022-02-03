@@ -1,0 +1,127 @@
+a.back {
+	float: left;
+	margin-top: 20px;
+	border-bottom: transparent;
+}
+
+body {
+	background-color: #333333;
+	color: white;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	border-bottom: solid;
+	border-color: white;
+}
+
+/* MAIN CONTAINER STYLES */
+#mainContainer {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header { 
+	background-color: #444444;
+	height: 80px; 
+	width: 960px;
+}
+
+#header h1 { 
+	text-align: center;
+	font-size: 48px;
+}
+
+#left {
+	background-color: #444444;
+	width: 240px;
+}
+
+#left h2 {
+	margin-left: -20px;
+	padding-top: 20px;
+	color: white;
+	text-align: center;
+}
+
+#left ul {
+	padding-bottom: 20px;
+}
+
+#left ul .orange {
+	background-color: #DC9B25;
+}
+
+#left ul .green {
+	background-color: #657761;
+}
+
+#left ul li {
+	list-style-type: none;
+	margin-right: 20px;
+	margin-left: -20px;
+}
+
+#left ul li a {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	background: url('http://i.imgur.com/ERt02Jx.png') no-repeat center right;
+}
+
+#left ul li a.lastChild {
+	border-bottom: transparent;
+	background-color: #657761;
+}
+
+#left ul li a.orange:hover {
+	background-color: #E6B943;
+}
+
+#left ul li a.green:hover {
+	background-color: #83957F;
+}
+
+#left ul li a.lastChild:hover {
+	background-color: #83957F;
+}
+
+#right {
+	background-color: #444444;
+	width: 700px;
+	float: right;
+	margin-top: -330px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+#right p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#right img {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	float: right;
+}
+
+.special {
+	color: #E7AA1A;
+}
+
+#footer {
+	float: left;
+	background-color: #444444;
+	height: 30px;
+	width: 960px;
+	text-align: center;
+	padding-top: 10px;
+}

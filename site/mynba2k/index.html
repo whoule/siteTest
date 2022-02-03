@@ -1,0 +1,180 @@
+<html>
+<head>
+	<title>MyNBA2k15 - Season Helper</title>
+	<script src="../jquery.min.js"></script>
+	<script src="moment.min.js"></script>
+	<script src="please.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function () {
+			//console.log('loaded');
+
+			colourCycle();
+
+			Please.make_color ({
+				golden: false, //disable default
+				full_random: true //go full random
+			});
+			
+			//current time
+			var time = moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); 
+			$('#time-holder').html(time);  
+
+			//playoff starts
+			var playoffTime = moment().add(3, 'days').add(10.5, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+			$('#playoffTime-holder').html(playoffTime);
+
+			//round 2
+			var roundTwoTime = moment().add(3, 'days').add(10.5, 'hours').add(7, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+			$('#roundTwoTime-holder').html(roundTwoTime);
+
+			//round 3
+			var roundThreeTime = moment().add(3, 'days').add(10.5, 'hours').add(14, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+			$('#roundThreeTime-holder').html(roundThreeTime);
+
+			//round 4
+			var finalsTime = moment().add(3, 'days').add(10.5, 'hours').add(21, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+			$('#finalsTime-holder').html(finalsTime);
+
+			//update every second
+			var everySecond = window.setInterval(updateTime, 1000);
+               
+            //update times
+            function updateTime() {
+            	time = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+               	 $('#time-holder').html(time); 
+
+               	playoffTime = moment().add(3, 'days').add(10.5, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");    	
+				$('#playoffTime-holder').html(playoffTime);
+
+				roundTwoTime = moment().add(3, 'days').add(10.5, 'hours').add(7, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+				$('#roundTwoTime-holder').html(roundTwoTime);
+
+				roundThreeTime = moment().add(3, 'days').add(10.5, 'hours').add(14, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+				$('#roundThreeTime-holder').html(roundThreeTime);
+
+				finalsTime = moment().add(3, 'days').add(10.5, 'hours').add(21, 'hours').format("dddd, MMMM Do YYYY, h:mm:ss a");
+				$('#finalsTime-holder').html(finalsTime);
+            }
+
+
+            //colour randomization
+            var colorInterval = window.setInterval(colourCycle, 1000);
+
+            function colourCycle() {
+            	
+            var e=document.getElementById("div3").getElementsByTagName("span");
+
+            for(var n=e.length-1;n>=0;n--){
+            	e[n].style.color=Please.make_color({saturation:.7,value:.7})}
+            }
+
+			});
+            
+	</script>
+	<style type="text/css">
+		body {
+			margin-top: 10px;
+			margin-bottom: 0px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 800px;
+			text-align: center;
+		}
+
+		#main {
+			width: 795px;
+			height: 400px;
+			border: dotted red 3px;
+		}
+
+		p {
+			display: inline;
+			font-size: 20px;
+		}
+
+		#time-holder {
+			color: green;
+		}
+
+		#playoffTime-holder {
+			color: purple;
+		}
+
+		#roundTwoTime-holder {
+			color: blue;
+		}
+
+		#roundThreeTime-holder {
+			color: olive;
+		}
+
+		#finalsTime-holder {
+			color: teal;
+		}
+
+		#div1, #div2, #div3, #div4, #div5, #div6 {
+			margin-top: 30px;
+		}
+
+		#div3 p {
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#div3 span {
+			font-size: 50px;
+			font-weight: bolder;
+		}
+
+		#special {
+			color: red;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		h5 {
+			color: maroon;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<img src="logo.jpg" />
+	
+	<div id="main">
+		<div id="div1">
+			<h5>*Does not include time taken to find a season*</h5>
+			<p>Current Time (<span id="special">Start Time</span>): </p>
+			<p id="time-holder"></p>
+		</div>
+		<div id="div2">
+			<p><span id="special">Quarter Finals</span> will Start at: </p>
+			<p id="playoffTime-holder"></p>
+		</div>
+		<div id="div4">
+			<p><span id="special">Semi Finals</span> will Start at: </p>
+			<p id="roundTwoTime-holder"></p>
+		</div>
+		<div id="div5">
+			<p><span id="special">Conference Finals</span> will Start at: </p>
+			<p id="roundThreeTime-holder"></p>
+		</div>
+		<div id="div6">
+			<p><span id="special">NBA Finals</span> will Start at: </p>
+			<p id="finalsTime-holder"></p>
+		</div>
+
+		<div id="div3" class="hidden">
+			<span>G</span>
+			<span>o</span>
+			<span>o</span>
+			<span>d</span>
+			<span>L</span>
+			<span>u</span>
+			<span>c</span>
+			<span>k</span>
+			<span>!</span>
+		</div>	
+	</div>
+</body>
+</html>
